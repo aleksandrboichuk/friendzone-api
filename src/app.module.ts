@@ -27,10 +27,10 @@ import {AuthModule} from "./auth/auth.module";
       SequelizeModule.forRoot({
           dialect: "postgres",
           host: process.env.POSTGRES_HOST,
-          port: Number(process.env.POSTGRES_PORT),
           username: process.env.POSTGRES_USER,
           password: process.env.POSTGRES_PASSWORD,
-          database: process.env.POSTGRES_DB,
+          database: process.env.POSTGRES_DATABASE,
+          uri:process.env.POSTGRES_URL,
           models: [
               User,
               Image,
