@@ -1,4 +1,4 @@
-# FriendZone
+# FriendZone (In Developing)
 
 [FriendZone - prod](https://friendzone-w4ln.vercel.app)
 
