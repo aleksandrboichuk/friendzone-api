@@ -63,7 +63,7 @@ export class User {
             longitude: 3.3488896,
             accuracy: 7173.528443511279
         }})
-    @Prop()
+    @Prop({type: Object})
     location: {
         country: String,
         city: String,
@@ -98,7 +98,7 @@ export class User {
         description: "User Settings",
         example: {isDarkModeForced: true}
     })
-    @Prop()
+    @Prop({type: Object})
     settings: {
         isDarkModeForced: Boolean
     };
