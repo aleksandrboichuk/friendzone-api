@@ -27,7 +27,8 @@ export class UpdateUserDto{
     @ApiProperty({description: "User Description", required: true, example: "My name is John. I am from Kyiv, Ukraine"})
     @IsString({message: "Description must be a string"})
     @Length(15, 150, {message: "Description name must contains from 15 to 150 characters"})
-    readonly description: string;
+    @IsOptional()
+    readonly description?: string;
 
     @ApiProperty({description: "User Hobbies", required: true, example: ["uuid1", "uuid2"]})
     @IsArray({message: "Settings must be an array" })
