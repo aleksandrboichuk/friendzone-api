@@ -62,15 +62,15 @@ export class User {
             latitude: 6.5568768,
             longitude: 3.3488896,
             accuracy: 7173.528443511279
-    }})
+        }})
     @Prop()
-    location: [{
+    location: {
         country: String,
         city: String,
         latitude?: Number,
         longitude?: Number,
         accuracy?: Number,
-    }]
+    }
 
     @ApiProperty({
         description: "User Pictures Array",
@@ -83,7 +83,6 @@ export class User {
         description: "User Social Media Links Array",
         example: ['https://www.instagram.com/', 'https://facebook.com/']
     })
-
     @Prop()
     socialMedia: String[]
 
@@ -99,11 +98,10 @@ export class User {
         description: "User Settings",
         example: {isDarkModeForced: true}
     })
-
     @Prop()
-    settings: [{
+    settings: {
         isDarkModeForced: Boolean
-    }];
+    };
 
     @Prop({ default: Date.now })
     createdAt: Date;
