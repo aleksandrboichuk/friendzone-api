@@ -106,10 +106,10 @@ export class User {
     @Prop({ default: Date.now })
     createdAt: Date;
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Language' })
+    @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: 'Language' })
     languages: Language[];
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Hobby' })
+    @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: 'Hobby' })
     hobbies: Hobby[];
 }
 
