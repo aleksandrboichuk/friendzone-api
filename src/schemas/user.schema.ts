@@ -62,7 +62,7 @@ export class User {
             latitude: 6.5568768,
             longitude: 3.3488896,
             accuracy: 7173.528443511279
-        }})
+    }})
     @Prop({type: Object})
     location: {
         country: String,
